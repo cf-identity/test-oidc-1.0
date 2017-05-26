@@ -10,8 +10,8 @@ applications:
     JBP_CONFIG_SPRING_AUTO_RECONFIGURATION: '[enabled: false]'
     JBP_CONFIG_TOMCAT: '{tomcat: { version: 7.0.+ }}'
     LOGIN_URL: http://oidc10.identity.cf-app.com
-    LOGIN_ENTITYBASEURL: http://oidc10.identity.cf-app.com
-    LOGIN_ENTITYID: http://oidc10.identity.cf-app.com
+    LOGIN_ENTITYBASEURL: https://oidc10.identity.cf-app.com
+    LOGIN_ENTITYID: https://oidc10.identity.cf-app.com
     SPRING_PROFILES_ACTIVE: default,hsqldb
     UAA_URL: http://oidc10.identity.cf-app.com
     SOURCE_CODE_AT: git@github.com:cf-identity/test-oidc-1.0.git
