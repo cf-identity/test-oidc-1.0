@@ -13,4 +13,4 @@ echo $WAR_PATH
 
 cf api --skip-ssl-validation https://api.identity.cf-app.com
 cf login -o system -s openid-connect-server -u admin
-cf push -f manifest.yml -p $WAR_PATH
+cf push -f manifest-aws.yml -p $WAR_PATH
