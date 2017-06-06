@@ -1,0 +1,21 @@
+applications:
+- name: oidc10
+  instances: 1
+  memory: 1024M
+  disk_quota: 1024M
+  routes:
+  - route: oidc10.uaa-acceptance.cf-app.com
+  env:
+    ISSUER_URI: https://oidc10.uaa-acceptance.cf-app.com
+    JBP_CONFIG_SPRING_AUTO_RECONFIGURATION: '[enabled: false]'
+    JBP_CONFIG_TOMCAT: '{tomcat: { version: 7.0.+ }}'
+    LOGIN_URL: http://oidc10.uaa-acceptance.cf-app.com
+    LOGIN_ENTITYBASEURL: https://oidc10.uaa-acceptance.cf-app.com
+    LOGIN_ENTITYID: https://oidc10.uaa-acceptance.cf-app.com
+    SPRING_PROFILES_ACTIVE: default,hsqldb
+    UAA_URL: http://oidc10.uaa-acceptance.cf-app.com
+    SOURCE_CODE_AT: git@github.com:cf-identity/test-oidc-1.0.git
+    LOGIN_CONFIG_URL: https://raw.githubusercontent.com/cf-identity/test-oidc-1.0/master/saml-providers.yml
+  stack: cflinuxfs2
+
+
