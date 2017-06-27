@@ -12,7 +12,6 @@ applications:
     LOGIN_URL: http://oidc10.uaa-acceptance.cf-app.com
     LOGIN_ENTITYBASEURL: https://oidc10.uaa-acceptance.cf-app.com
     LOGIN_ENTITYID: https://oidc10.uaa-acceptance.cf-app.com
-    SPRING_PROFILES_ACTIVE: default,hsqldb
     UAA_URL: http://oidc10.uaa-acceptance.cf-app.com
     SOURCE_CODE_AT: git@github.com:cf-identity/test-oidc-1.0.git
     LOGIN_CONFIG_URL: https://raw.githubusercontent.com/cf-identity/test-oidc-1.0/master/saml-providers.yml
