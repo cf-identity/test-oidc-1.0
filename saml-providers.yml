@@ -1,3 +1,4 @@
+spring_profiles: default,hsqldb
 login:
   saml:
     providers:
