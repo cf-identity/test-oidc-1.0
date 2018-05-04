@@ -1,4 +1,11 @@
 spring_profiles: default,hsqldb
+
+encryption:
+  active_key_label: CHANGE-THIS-KEY
+  encryption_keys:
+  - label: CHANGE-THIS-KEY
+    passphrase: CHANGEME
+
 login:
   saml:
     providers:
